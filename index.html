@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
+    <title>The Wine Store</title>
+</head>
+<body>
+    <div class="phone-case">
+        <div class="notch"></div>
+     
+
+        <div class="page-content">
+            <section id="opening-page" class="opening-page">
+                <div class="header">
+                    <h1 class="business-name">The Liquor Connection</h1>
+                    <p class="serving">Serving since 1934</p>
+                </div>
+                <div class="logo-bg">
+                    <img src="liquor-connection-logo.png" width="150px" height="150px">
+                </div>
+            
+                <div class="explore-btn-div">
+                    <input type="text" placeholder="EXPLORE THE SELECTION">
+                    <button id="explore" class="btn explore"><i class="fas fa-arrow-right"></i></button>
+                </div>
+            </section>
+
+
+
+
+
+<!-- The Entire Store Page with all selections --> 
+            <section id="selections-page" class="phone-container modal selections-page modal-content-right-slide">
+                <div class="modal-1-header">
+                    <img id="user" src="https://randomuser.me/api/portraits/men/7.jpg" alt="user-pic" width="50px" height="50px">
+                    <div class="right-icon-modal-1-header">
+                        <a href=""><i class="fas fa-sliders-h"></i></a>
+                        <a href=""><i class="fas fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+
+                <div class="welcome-top">
+                    <p>Good evening, José!</p>
+                    <h1 class="main-title">Browse the largest & finest selection of Liquor</h1>
+                    <div class="search">
+                        <div class="search-bar">
+                            <span><i class="fas fa-search"></i></i></span>
+                            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Try 'Jacob's Creek'">
+                        </div>
+                        
+                        
+                        <ul id="myUL">
+                            <li><a href="">Apples</a></li>
+                            <li><a href="">Almonds</a></li>
+                            <li><a href="">Anchovies</a></li>
+        
+                            <li><a href="">Burger</a></li>
+                            <li><a href="">Blueberries</a></li>
+                            <li><a href="">Banana Bread</a></li>
+        
+                            <li><a href="">Cheese</a></li>
+                            <li><a href="">Corn</a></li>
+                            <li><a href="">Chicken</a></li>
+        
+                            <li><a href="">Doritos</a></li>
+                            <li><a href="">Donuts</a></li>
+                            
+                            <li><a href="">Eggs</a></li>
+                            <li><a href="">Espresso</a></li>
+        
+                            <li><a href="">Frozen Yogurt</a></li>
+                            <li><a href="">Figs</a></li>
+        
+                            <li><a href="">Potato</a></li>
+                            <li><a href="">Popcorn</a></li>
+                            <li><a href="">Pancakes</a></li>
+                            <li><a href="">Peaches</a></li>
+                            <li><a href="">Pizza</a></li>
+                    
+                            <li><a href="">Salad</a></li>
+                    
+                        </ul>
+
+                        
+
+
+                    </div>
+                </div>
+
+                <ul class="selection-choices">
+                    <a href="#" active><li>Wines</li></a>
+                    <a href="#"><li>Scotch</li></a>
+                    <a href="#"><li>Chardonay</li></a>
+                    <a href="#"><li>Whiskey</li></a>
+                    <a href="#"><li>Single Malts</li></a>
+                </ul>
+
+                <div class="bottles-container top-line-bottles">
+                    <div class="single-bottle-container">
+                        <div class="top-bottles top-bottle-1">
+                            <span><a href=""><i class="fas fa-heart"></i></a></span>
+                        </div>
+                        <div class="bottom-bottles">
+                            <p class="bottle-name">Mayacamas Sauvignon</p>
+                            <h5 class="price">$124<span>.99</span></h5>
+                        </div>
+                    </div> 
+                    <div class="single-bottle-container">
+                        <div class="top-bottles top-bottle-2">
+                            <span><a href=""><i class="fas fa-heart"></i></a></span>
+                        </div>
+                        <div class="bottom-bottles">
+                            <p class="bottle-name">Sauvignon Blanc</p>
+                            <h5 class="price">$99<span>.99</span></h5>
+                        </div>
+                    </div>
+                    <div class="single-bottle-container">
+                        <div class="top-bottles top-bottle-3">
+                            <span><a href=""><i class="fas fa-heart"></i></a></span>
+                        </div>
+                        <div class="bottom-bottles">
+                            <p class="bottle-name">Vino Tinto</p>
+                            <h5 class="price">$12<span>.99</span></h5>
+                        </div>
+                    </div>
+                    <div class="single-bottle-container">
+                        <div class="top-bottles top-bottle-4">
+                            <span><a href=""><i class="fas fa-heart"></i></a></span>
+                        </div>
+                        <div class="bottom-bottles">
+                            <p class="bottle-name">Taylor's White</p>
+                            <h5 class="price">$52<span>.99</span></h5>
+                        </div>
+                    </div>
+                    <div class="single-bottle-container">
+                        <div class="top-bottles top-bottle-5">
+                            <span><a href=""><i class="fas fa-heart"></i></a></span>
+                        </div>
+                        <div class="bottom-bottles">
+                            <p class="bottle-name">Kitty Kats Rosé</p>
+                            <h5 class="price">$29<span>.99</span></h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bottles-container bottom-line-bottles">
+                    <div class="single-bottle-container">
+                        <div class="top-bottles top-bottle-6">
+                            <span><a href=""><i class="fas fa-heart"></i></a></span>
+                        </div>
+                        <div class="bottom-bottles">
+                            <p class="bottle-name">Game of Thrones</p>
+                            <h5 class="price">$214<span>.99</span></h5>
+                        </div>
+                    </div> 
+                    <div class="single-bottle-container">
+                        <div class="top-bottles top-bottle-7">
+                            <span><a href=""><i class="fas fa-heart"></i></a></span>
+                        </div>
+                        <div class="bottom-bottles">
+                            <p class="bottle-name">Monkey Shoulder</p>
+                            <h5 class="price">$34<span>.99</span></h5>
+                        </div>
+                    </div>
+                    <div class="single-bottle-container">
+                        <div class="top-bottles top-bottle-8">
+                            <span><a href=""><i class="fas fa-heart"></i></a></span>
+                        </div>
+                        <div class="bottom-bottles">
+                            <p class="bottle-name">Gentleman Jack</p>
+                            <h5 class="price">$49<span>.99</span></h5>
+                        </div>
+                    </div>
+                    <div class="single-bottle-container">
+                        <div class="top-bottles top-bottle-9">
+                            <span><a href=""><i class="fas fa-heart"></i></a></span>
+                        </div>
+                        <div class="bottom-bottles">
+                            <p class="bottle-name">Jameson</p>
+                            <h5 class="price">$22<span>.99</span></h5>
+                        </div>
+                    </div>
+                    <div class="single-bottle-container">
+                        <div class="top-bottles top-bottle-10">
+                            <span><a href=""><i class="fas fa-heart"></i></a></span>
+                        </div>
+                        <div class="bottom-bottles">
+                            <p class="bottle-name">Jim Beam</p>
+                            <h5 class="price">$12<span>.99</span></h5>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        
+
+
+
+            <!-- the final page with big picture and full info -->
+            <section id="myModal2" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content-right-slide modal-2-content">
+                    <div class="modal-2-header">
+                        <i class="fas fa-arrow-left" id="backToPage2"></i>
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="modal-body-2">
+                        <h2>Mayacamas Sauvignon</h2>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <div class="wine-picture">
+                            <img src="https://images.unsplash.com/photo-1584916201218-f4242ceb4809?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1315&q=80" width="150px" height="250px" alt="wine">
+                        </div>
+                        <p>Alcohol</p>
+                        <h1>13.1%</h1>
+                        <p>Volume</p>
+                        <h1>750 mL</h1>
+                        <p>Titratable Acidity</p>
+                        <h1>10.1 G/L</h1>
+                        <p>pH</p>
+                        <h1>2.97</h1>
+                        
+                    </div>
+                    <div class="modal-2-footer">
+                        <div class="footer-2-btns">
+                            <button id="minus">-</button>
+                            <label id="number-items">1</label>
+                            <button id="plus">+</button>
+                        </div>
+                        <div class="identification">
+                            <p>The 2010 Mayacamas Sauvignon was a tremendous year with touches of oak. There are notes of gooseberry and has a smooth mouthfeel.</p>
+                            <div class="bottom-id">
+                                <h1>$124.99</h1>
+                                <button id="addToCart">ADD TO CART</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        
+        </div>
+    
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
