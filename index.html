@@ -5,23 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
-    <title>The Wine Store</title>
+    <script src="script.js" defer></script>
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-replace-svg></script>
+    <title>Settings</title>
 </head>
 <body>
-    <div class="phone-case">
-        <div class="notch"></div>
-     
-
-        <div class="page-content">
+    <div class="phone-shell">
+        <div class="phone-viewing-container">
+            <div class="iphone-notch"></div>
             <section id="opening-page" class="opening-page">
                 <div class="header">
                     <h1 class="business-name">The Liquor Connection</h1>
                     <p class="serving">Serving since 1934</p>
                 </div>
-                <div class="logo-bg">
-                    <img src="liquor-connection-logo.png" width="150px" height="150px">
-                </div>
+
+                <img class="bg-image" src="https://images.unsplash.com/photo-1578911373434-0cb395d2cbfb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80" alt="wine-rack">
+
             
                 <div class="explore-btn-div">
                     <input type="text" placeholder="EXPLORE THE SELECTION">
@@ -30,11 +29,7 @@
             </section>
 
 
-
-
-
-<!-- The Entire Store Page with all selections --> 
-            <section id="selections-page" class="phone-container modal selections-page modal-content-right-slide">
+            <section id="modal-1" class="phone-container modal-1 modal-content-right-slide">
                 <div class="modal-1-header">
                     <img id="user" src="https://randomuser.me/api/portraits/men/7.jpg" alt="user-pic" width="50px" height="50px">
                     <div class="right-icon-modal-1-header">
@@ -51,7 +46,6 @@
                             <span><i class="fas fa-search"></i></i></span>
                             <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Try 'Jacob's Creek'">
                         </div>
-                        
                         
                         <ul id="myUL">
                             <li><a href="">Apples</a></li>
@@ -84,19 +78,15 @@
                             <li><a href="">Salad</a></li>
                     
                         </ul>
-
-                        
-
-
                     </div>
                 </div>
 
                 <ul class="selection-choices">
                     <a href="#" active><li>Wines</li></a>
                     <a href="#"><li>Scotch</li></a>
-                    <a href="#"><li>Chardonay</li></a>
-                    <a href="#"><li>Whiskey</li></a>
                     <a href="#"><li>Single Malts</li></a>
+                    <a href="#"><li>Whiskey</li></a>
+                    <a href="#"><li>Chardonay</li></a>
                 </ul>
 
                 <div class="bottles-container top-line-bottles">
@@ -195,62 +185,9 @@
                     </div>
                 </div>
             </section>
-
-        
-
-
-
-            <!-- the final page with big picture and full info -->
-            <section id="myModal2" class="modal">
-                <!-- Modal content -->
-                <div class="modal-content-right-slide modal-2-content">
-                    <div class="modal-2-header">
-                        <i class="fas fa-arrow-left" id="backToPage2"></i>
-                        <i class="fas fa-shopping-cart"></i>
-                    </div>
-                    <div class="modal-body-2">
-                        <h2>Mayacamas Sauvignon</h2>
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
-                        </div>
-                        <div class="wine-picture">
-                            <img src="https://images.unsplash.com/photo-1584916201218-f4242ceb4809?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1315&q=80" width="150px" height="250px" alt="wine">
-                        </div>
-                        <p>Alcohol</p>
-                        <h1>13.1%</h1>
-                        <p>Volume</p>
-                        <h1>750 mL</h1>
-                        <p>Titratable Acidity</p>
-                        <h1>10.1 G/L</h1>
-                        <p>pH</p>
-                        <h1>2.97</h1>
-                        
-                    </div>
-                    <div class="modal-2-footer">
-                        <div class="footer-2-btns">
-                            <button id="minus">-</button>
-                            <label id="number-items">1</label>
-                            <button id="plus">+</button>
-                        </div>
-                        <div class="identification">
-                            <p>The 2010 Mayacamas Sauvignon was a tremendous year with touches of oak. There are notes of gooseberry and has a smooth mouthfeel.</p>
-                            <div class="bottom-id">
-                                <h1>$124.99</h1>
-                                <button id="addToCart">ADD TO CART</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        
         </div>
-    
     </div>
-
-    <script src="script.js" defer></script>
+    
+    
 </body>
 </html>
