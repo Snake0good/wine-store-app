@@ -102,3 +102,97 @@ for (let i=0; i<items.length; i++) {
     selectionsPage.style.display = "none";
   })
 }
+
+
+
+/// ---> OPEN the shopping cart>
+const shoppingCartModal = document.getElementById('shopping-cart-modal')
+
+const shoppingCartBtn = document.querySelectorAll('.shopping-cart-icon')
+  for(let i=0; i<shoppingCartBtn.length; i++) {
+    shoppingCartBtn[i].addEventListener('click', function() {
+      page3.style.display = 'none';
+      selectionsPage.style.display = 'none';
+
+
+      shoppingCartModal.style.display = 'block';
+      shoppingCartModal.classList.add('fade-in');
+      shoppingCartModal.classList.remove('fade-out')
+    })
+  }
+
+/// ---> CLOSE the shopping cart>
+const closeBtn = document.getElementById('close');
+
+closeBtn.addEventListener('click', function() {
+    shoppingCartModal.classList.add('fade-out');
+    shoppingCartModal.classList.remove('fade-in')
+    shoppingCartModal.style.display = 'none';
+    selectionsPage.style.display = 'block';
+});
+
+
+
+
+
+/// get the price on the page and the number of items desired
+const price = page3.querySelector("#price-content")
+//const quantWantToPurch = page3.querySelector('#number-itmes').innerText
+
+const addBtn = document.getElementById('addToCart');
+var totalPrice = document.getElementById('total-price');
+let total = 0;
+
+function addItems() {
+    var row = table.insertRow(table.length);
+    var cell1 = row.insertCell(0);
+    var cell2 = row.insertCell(1);
+    var cell3 = row.insertCell(2);
+    var cell4 = row.insertCell(3);
+
+    var product = document.getElementById('bottleName').innerText;
+    var quantity = document.getElementById('number-items').innerText;
+    var price = document.getElementById('price-content').innerText;
+
+    var itemsTotalPrice = (Number(price.slice(1)) * Number(quantity)).toFixed(2)
+
+    cell1.innerHTML = product;
+    cell2.innerHTML = quantity;
+    cell3.innerHTML = price;
+    cell4.innerHTML = `$${itemsTotalPrice}`;
+
+    let addedPrice = itemsTotalPrice;
+    
+    total += Number(addedPrice);
+    totalPrice.innerHTML = total.toFixed(2);
+
+    // reset the quantity to 1
+    numberItems.innerHTML = 1;
+    itemsCount = 1
+}
+
+addBtn.addEventListener('click', addItems)
+
+
+
+
+
+/// ----- clear the entire cart 
+const clearBtn = document.getElementById('clear');
+
+
+// reset the top headers
+clearBtn.addEventListener("click", function () {
+  table.innerHTML = `
+          <tr>
+              <th>Product</th>
+              <th>Quantity</th>
+              <th>Price per item</th>
+              <th>Total price</th>
+          </tr>
+  `
+  total = 0;
+  totalPrice.innerHTML = 0.00
+})
+
+
